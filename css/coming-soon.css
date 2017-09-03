@@ -1,0 +1,15 @@
+#content{
+      border: none;
+}
+.coming-soon{
+      margin: 0 auto;
+      padding: 110px 0 150px 0;
+      width: 90%;
+      font-size: x-large;
+      font-weight: 400;
+      text-shadow: 10px 5px 5px #101010;
+      text-align: center;
+}
+#content{
+      margin-bottom: 0;
+}

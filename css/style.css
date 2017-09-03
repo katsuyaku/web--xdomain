@@ -1,0 +1,262 @@
+/* ▼head */
+/* ▼body */
+* {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+/* -webkit-font-smoothing　はエイリアシングが起きないようにするための処理でジャギーが目立たなくなる
+値は、none,antialiased,subpixel-antialiased　←これはSafariでのDefault */
+/* -moz-osx-font-smoothing　はfirefoxにおけるantialiased？ */
+
+
+*, *:after, *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+/* boder-boxをかけることで、全体のpaddingとボーダーを幅と高さに含める
+値は、inherit,border-box,content-box　←これが初期値 */
+
+
+body {
+      font:normal 12px/1.6em silom , Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+      color: #444;
+}
+/* スペースを含んでいる名称は””で囲む、また複数しているのは表示できないフォントだった場合の候補 */
+
+@media screen and (min-width: 791px){
+      .windowSize{
+      border: black solid;
+      position: fixed;
+      right: 3%;
+      top: 3%;
+      width: 500px;
+      height: 40px;
+      }
+      .sizeInner{
+      margin: auto;
+      border: blue solid;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      line-height: 2.0em;
+      background: white;
+      text-align: center;
+      vertical-align: middle;
+      }
+}
+@media screen and (max-width: 790px){
+      .windowSize{
+      display: none;
+      }
+}
+/* 右上に表示しているウィンドウサイズのboxに対するCSS */
+
+
+/* ここから下はページ全体に対するCSS */
+mark{
+      position: relative;
+      top: -2px;
+      font-size: 18px;
+      font-weight: normal;
+      background: linear-gradient(transparent 55%, yellow 55%, yellow 100%);
+}
+.twitter{
+      margin: 0 auto;
+      margin-top: -20px;
+      width: 60px;
+      height: 25px;
+      border: solid black 1px;
+      background-color: #1f8dd4;
+      border-radius: 6px;
+      text-align: center;
+      vertical-align: bottom;
+}
+.twitter a{
+      color: white;
+}
+
+/* ページのレイアウトに必要なCSS */
+a{
+      text-decoration: none;
+}
+p{
+      padding: 15px 0 30px 0;
+}
+li{
+      margin: 10px;
+}
+
+@media screen and (min-width:481px){
+      h1{
+            padding:10px 10px 10px 0;
+            font-size: 22px;
+            position: relative;
+            left: -10px;
+      }
+      #main-nav{
+            font-size: 16px;
+      }
+      #headerimg{
+            position: relative;
+            left: 20px;
+            bottom: 17px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding:15px 10px;
+            width: 295px;
+            height: 60px;
+            float: left;
+      }
+      .thisDeco{
+            margin:30px;
+            font-size: 18px;
+      }
+      .copylight{
+            float: left;
+            width: 100%;
+            color: #eeeeee;
+            background-color: #121212;
+            text-align: center;
+            font-size: 12px;
+      }
+      #main-nav{
+            background-color: #4d4b49;
+            width: 100%;
+            min-width: 481px;
+      }
+      #main-nav ul{
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+      }
+      #main-nav ul.menu li a{
+            height: 40px;
+            font-weight: 700;
+            color: #ffffff;
+            position: relative;
+            top: 5px;
+      }
+      .container{
+
+            min-width: 481px;
+      }
+      #content{
+            margin: 0 auto;
+            margin-bottom: 150px;
+            padding: 0px 50px;
+            width: 90%;
+            height: 100%;
+            border: medium solid #333333;
+            border-radius: 20px;
+            line-height: 2.0em;
+            font-weight: 600;
+      }
+      #content h1{
+            font-weight: 800;
+      }
+      #content .content-box:first-child{
+            margin-top: 40px;
+      }
+      #content .content-box:last-child{
+            margin-bottom: 30px;
+            border-bottom: none;
+      }
+
+      #footer{
+            margin-top: 20px;
+            width: 100%;
+            height: 100px;
+            float: left;
+            background-color: #4d4b49;
+      }
+}
+
+@media screen and (max-width: 480px){
+      h1{
+            padding:10px 10px 10px 0;
+            font-size: 22px;
+            position: relative;
+            left: -10px;
+      }
+      #main-nav{
+            font-size: 16px;
+      }
+      #headerimg{
+            position: relative;
+            left: 20px;
+            bottom: 17px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding:15px 10px;
+            width: 295px;
+            height: 60px;
+            float: left;
+      }
+      .thisDeco{
+            margin:30px;
+            font-size: 18px;
+      }
+      .copylight{
+            float: left;
+            width: 100%;
+            color: #eeeeee;
+            background-color: #121212;
+            text-align: center;
+            font-size: 12px;
+      }
+      #main-nav{
+            background-color: #4d4b49;
+            width: 100%;
+            min-width: 481px;
+      }
+      #main-nav ul{
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+      }
+      #main-nav ul.menu li a{
+            height: 40px;
+            font-weight: 700;
+            color: #ffffff;
+            position: relative;
+            top: 5px;
+      }
+      .container{
+            min-width: 481px;
+      }
+      #content{
+            margin: 0 auto;
+            margin-bottom: 150px;
+            padding: 0px 50px;
+            width: 90%;
+            height: 100%;
+            border: medium solid #333333;
+            border-radius: 20px;
+            line-height: 2.0em;
+            font-weight: 600;
+      }
+      #content h1{
+            font-weight: 800;
+      }
+      #content .content-box:first-child{
+            margin-top: 40px;
+      }
+      #content .content-box:last-child{
+            margin-bottom: 30px;
+            border-bottom: none;
+      }
+
+      #footer{
+            margin-top: 20px;
+            min-width: 481px;
+            height: 100px;
+            float: left;
+            background-color: #4d4b49;
+      }
+      .copylight{
+            min-width: 481px;
+      }
+}
