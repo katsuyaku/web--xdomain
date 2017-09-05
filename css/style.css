@@ -88,13 +88,23 @@ p{
 li{
       margin: 10px;
 }
+h1{
+      padding:10px 10px 10px 0;
+      font-size: 22px;
+      position: relative;
+      left: -10px;
+}
+h2{
+      padding:7px 7px 7px 0;
+      font-size: 18px;
+      position: relative;
+      left: -7px;
+}
+
 
 @media screen and (min-width:481px){
-      h1{
-            padding:10px 10px 10px 0;
-            font-size: 22px;
-            position: relative;
-            left: -10px;
+
+
       }
       #main-nav{
             font-size: 16px;
@@ -176,12 +186,6 @@ li{
 
 
 @media screen and (max-width: 480px){
-      h1{
-            padding:10px 10px 10px 0;
-            font-size: 22px;
-            position: relative;
-            left: -10px;
-      }
       #main-nav{
             font-size: 16px;
       }

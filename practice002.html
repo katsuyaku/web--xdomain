@@ -29,21 +29,53 @@
       <div class="container">
         <p class="thisDeco">&emsp;this is the first page...</p>
         <section class="clearfix">
+
           <div id="content">
-              <div class="content-box">
-              <h1>first</h1>
-
-              <h1>second</h1>
-
-              <h1>third</h1>
-
-              <h1>sample</h1>
-
-              <h1>sample2</<h1>
-
-              <h1>sample3</h1>
-              
+            <div class="content-box">
+              <h1>イベントの種類</h1>
+              <ul class="menu">
+                <li class="eventList">
+                  <h2>クリックイベント</h2>
+                  <button class="clickEventExe" type="button">これはクリックイベントです。クリックすると、テキストが変更されます。</button>
+                  <p class="clickEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                </li>
+                <p>$('.clickEventExe').click(function () {<br />
+                  $(this).text("クリックされました");<br />
+                })</p>
+                <li class="eventList">
+                  <h2>マウスオーバーイベント</h2>
+                  <button class="mouseoutEventExe" type="button">これはマウスオーバーイベントです。マウスオーバーすると、テキストが変更されます。</button>
+                  <p class="mouseoverEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                </li>
+                <li class="eventList">
+                  <h2>マウスアウトイベント</h2>
+                  <button class="mouseoutEventExe" type="button">これはマウスアウトイベントです。ここをマウスアウトすると、テキストが変更されます。</button>
+                  <p class="mouseoutEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                </li>
+              </ul>
             </div>
+
+            <div class="content-box">
+              <h1>イベントの種類</h1>
+              <ul class="menu">
+                <li class="eventList">
+                  <h2>クリックイベント</h2>
+                  <button class="clickEventExe" type="button">これはクリックイベントです。クリックすると、テキストが変更されます。</button>
+                  <p class="clickEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                </li>
+                <li class="eventList">
+                  <h2>マウスオーバーイベント</h2>
+                  <button class="mouseoutEventExe" type="button">これはマウスオーバーイベントです。マウスオーバーすると、テキストが変更されます。</button>
+                  <p class="mouseoverEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                </li>
+                <li class="eventList">
+                  <h2>マウスアウトイベント</h2>
+                  <button class="mouseoutEventExe" type="button">これはマウスアウトイベントです。ここをマウスアウトすると、テキストが変更されます。</button>
+                  <p class="mouseoutEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </section>
       </div>
