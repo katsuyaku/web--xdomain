@@ -29,7 +29,7 @@ body {
       border: black solid;
       position: fixed;
       right: 3%;
-      top: 3%;
+      top: 5%;
       width: 500px;
       height: 40px;
       }
@@ -77,6 +77,13 @@ mark{
 .twitter a{
       color: white;
 }
+#headerimg{
+      position: relative;
+      top: -20px;
+      left: 20px;
+      width: 295px;
+      height: 60px;
+}
 
 /* ページのレイアウトに必要なCSS */
 a{
@@ -89,36 +96,27 @@ li{
       margin: 10px;
 }
 h1{
-      padding:10px 10px 10px 0;
+      margin:50px 10px 8px 6px;
       font-size: 22px;
+      position: relative;
+      left: -12px;
+}
+h2{
+      margin:40px 8px 6px 6px;
+      font-size: 18px;
       position: relative;
       left: -10px;
 }
-h2{
-      padding:7px 7px 7px 0;
+h3{
+      margin:8px 6px 4px 6px;
       font-size: 18px;
       position: relative;
-      left: -7px;
+      left: -8px;
 }
 
-
 @media screen and (min-width:481px){
-
-
-      }
       #main-nav{
             font-size: 16px;
-      }
-      #headerimg{
-            position: relative;
-            left: 20px;
-            bottom: 17px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding:15px 10px;
-            width: 295px;
-            height: 60px;
-            float: left;
       }
       .thisDeco{
             margin-top: 30px;
@@ -189,17 +187,7 @@ h2{
       #main-nav{
             font-size: 16px;
       }
-      #headerimg{
-            position: relative;
-            left: 20px;
-            bottom: 17px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding:15px 10px;
-            width: 295px;
-            height: 60px;
-            float: left;
-      }
+
       .thisDeco{
             margin-top: 30px;
             margin-bottom: -40px;

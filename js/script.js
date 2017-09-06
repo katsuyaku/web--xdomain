@@ -10,5 +10,11 @@ $(function(){
   }),
   $('.mouseoutEventExe').mouseout(function () {
     $(this).text("マウスアウトされました");
-  });
+  })
+
+
+/*  $( ".ui-accordion" ).accordion();
+*/
+
+
 });
