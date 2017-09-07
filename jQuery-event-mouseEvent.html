@@ -26,11 +26,15 @@
 
     <nav id="main-nav" class="clearfix">
       <ul class="menu">
-        <li><a class="button" href="./coming-soon.html">1</a></li>
-        <li><a class="button" href="./coming-soon.html">2</a></li>
-        <li><a class="button" href="./coming-soon.html">3</a></li>
-        <li><a class="button" href="./coming-soon.html">4</a></li>
-        <li><a class="button" href="./coming-soon.html">5</a></li>
+        <li><<a class="button" href="./jQuery-event-mouseEvent.html">マウスイベント</a></li>
+        <li><a class="button" href="./coming-soon.html">キーイベント</a></li>
+        <li><a class="button" href="./coming-soon.html">フォームイベント</a></li>
+        <li><a class="button" href="./coming-soon.html">ブラウザイベント</a></li>
+      </ul>
+      <ul class="menu">
+        <li><a class="button" href="./coming-soon.html">ロードイベント</a></li>
+        <li><a class="button" href="./coming-soon.html">イベントハンドラアタッチメント</a></li>
+        <li><a class="button" href="./coming-soon.html">イベントオブジェクト</a></li>
       </ul>
     </nav>
 
@@ -48,7 +52,7 @@
                   <dd>
                     <p>.click()<br />要素上でクリックした時に</p>
                     <button class="clickEventExe" type="button">これはクリックイベントです。クリックすると、テキストが変更されます。</button>
-                    <p class="clickEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="clickEventExe">　ちなみにボタンではない、このようなテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -56,7 +60,7 @@
                   <dd>
                     <p>.dblclick()<br />要素上でダブルクリックした時に</p>
                     <button class="dblclickEventExe" type="button">これはダブルクリックイベントです。ダブルクリックすると、テキストが変更されます。</button>
-                    <p class="dblclickEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="dblclickEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -64,7 +68,7 @@
                   <dd>
                     <p>.mousedown()<br />要素上でマウスボタンを押した時に</p>
                     <button class="mousedownEventExe" type="button">これはマウスダウンイベントです。ここをマウスダウンすると、テキストが変更されます。</button>
-                    <p class="mousedownEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mousedownEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -72,7 +76,7 @@
                   <dd>
                     <p>.mouseup()<br />要素上でマウスボタンを離した時に</p>
                     <button class="mouseupEventExe" type="button">これはマウスアップイベントです。ここをマウスアップすると、テキストが変更されます。</button>
-                    <p class="mouseupEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mouseupEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -80,7 +84,7 @@
                   <dd>
                     <p>.mouseover()<br />要素上にマウスカーソルが入った時に（子孫要素を含む）</p>
                     <button class="mouseoverEventExe" type="button">これはマウスオーバーイベントです。マウスオーバーすると、テキストが変更されます。</button>
-                    <p class="mouseoverEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mouseoverEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -88,7 +92,7 @@
                   <dd>
                     <p>.mouseout()<br />要素上からマウスカーソルが出た時に（子孫要素を含む）</p>
                     <button class="mouseoutEventExe" type="button">これはマウスアウトイベントです。ここをマウスアウトすると、テキストが変更されます。</button>
-                    <p class="mouseoutEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mouseoutEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -96,7 +100,7 @@
                   <dd>
                     <p>.mouseenter()<br />要素上にマウスカーソルが入った時に（子孫要素を除く）</p>
                     <button class="mouseenterEventExe" type="button">これはマウスエンターイベントです。ここをマウスエンターすると、テキストが変更されます。</button>
-                    <p class="mouseenterEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mouseenterEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -104,7 +108,7 @@
                   <dd>
                     <p>.mouseleave()<br />要素上からマウスカーソルが出た時に（子孫要素を除く）</p>
                     <button class="mouseleaveEventExe" type="button">これはマウスリーブイベントです。ここをマウスリーブすると、テキストが変更されます。</button>
-                    <p class="mouseleaveEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mouseleaveEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -112,7 +116,7 @@
                   <dd>
                     <p>.mousemove()<br />要素内でマウスカーソルが移動した時に</p>
                     <button class="mousemoveEventExe" type="button">これはマウスムーブイベントです。ここをマウスムーブすると、テキストが変更されます。</button>
-                    <p class="mousemoveEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mousemoveEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
                 <li class="eventList"><dl>
@@ -120,7 +124,7 @@
                   <dd>
                     <p>.hover()<br />マウスカーソルが要素内から出たり入ったりした時に（子孫要素は除く）</p>
                     <button class="mousehoverEventExe" type="button">これはマウスホバーイベントです。ここをマウスホバーすると、テキストが変更されます。</button>
-                    <p class="mousehoverEventExe">　ちなみにこちらボタンではない、ただのテキストでも可能です。</p>
+                    <p class="mousehoverEventExe">　これも同様にテキストでも可能です。</p>
                   </dd>
                 </dl></li>
               </ol>
