@@ -7,7 +7,6 @@
   <link rel="shortcut icon" type="image/png" href="./image/favicon.png">
   <link rel="stylesheet" href="./css/reset.css" media="all">
   <link rel="stylesheet" href="./css/style.css" media="all">
-  <link rel="stylesheet" href="./css/jquery-ui-basic.css" media="all">
   <link rel="stylesheet" href="./css/other-style.css" media="all">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -26,28 +25,32 @@
 
     <nav id="main-nav" class="clearfix">
       <ul class="menu">
+        <li><<a class="button" href="./jQuery-event.html">イベントの種類</a></li>
         <li><<a class="button" href="./jQuery-event-mouseEvent.html">マウスイベント</a></li>
-        <li><a class="button" href="./coming-soon.html">キーイベント</a></li>
-        <li><a class="button" href="./coming-soon.html">フォームイベント</a></li>
-        <li><a class="button" href="./coming-soon.html">ブラウザイベント</a></li>
+        <li><a class="button" href="./coming-soon.html">キーイベント(準備中)
       </ul>
       <ul class="menu">
-        <li><a class="button" href="./coming-soon.html">ロードイベント</a></li>
-        <li><a class="button" href="./coming-soon.html">イベントハンドラアタッチメント</a></li>
-        <li><a class="button" href="./coming-soon.html">イベントオブジェクト</a></li>
+        </a></li>
+        <li><a class="button" href="./coming-soon.html">フォームイベント（準備中）</a></li>
+        <li><a class="button" href="./coming-soon.html">ブラウザイベント（準備中）</a></li>
+        <li><a class="button" href="./coming-soon.html">ロードイベント（準備中）</a></li>
+      </ul>
+      <ul class="menu">
+        <li><a class="button" href="./coming-soon.html">イベントハンドラアタッチメント（準備中）</a></li>
+        <li><a class="button" href="./coming-soon.html">イベントオブジェクト（準備中）</a></li>
       </ul>
     </nav>
 
     <main>
       <div class="container">
-        <p class="thisDeco">&emsp;this is the first page...</p>
+        <p class="thisDeco">&emsp;this is the first site...</p>
         <section class="clearfix">
 
           <div id="content">
             <div class="content-box">
               <h1>イベントの種類</h1>
               <ol style="list-style-type: upper-roman">
-                <li><h2>マウスイベント（10種類）</h2>
+                <li><h2><mark>マウスイベント（10種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
                     <li><dl><dt class="eventName">.click()</dt><dd>要素上でクリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.dblclick()</dt><dd>要素上でダブルクリックした時に</dd></dl></li>
@@ -61,7 +64,7 @@
                     <li><dl><dt class="eventName">.hover()</dt><dd>マウスカーソルが要素内から出たり入ったりした時に（子孫要素は除く）</dd></dl></li>
                   </ol>
                 </li>
-                <li><h2>キーイベント（5種類）</h2>
+                <li><h2><mark>キーイベント（5種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
                     <li><dl><dt class="eventName">.keydown()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.keypress()</dt><dd>クリックした時に</dd></dl></li>
@@ -70,7 +73,7 @@
                     <li><dl><dt class="eventName">.focusout()</dt><dd>クリックした時に</dd></dl></li>
                   </ol>
                 </li>
-                <li><h2>フォームイベント（5種類）</h2>
+                <li><h2><mark>フォームイベント（5種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
                     <li><dl><dt class="eventName">.focus()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.blur()</dt><dd>クリックした時に</dd></dl></li>
@@ -79,21 +82,21 @@
                     <li><dl><dt class="eventName">.submit()</dt><dd>クリックした時に</dd></dl></li>
                   </ol>
                 </li>
-                <li><h2>ブラウザイベント（3種類）</h2>
+                <li><h2><mark>ブラウザイベント（3種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
                     <li><dl><dt class="eventName">.resize()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.scroll()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.error()</dt><dd>クリックした時に</dd></dl></li>
                   </ol>
                 </li>
-                <li><h2>ロードイベント（3種類）</h2>
+                <li><h2><mark>ロードイベント（3種類）<mark/></h2>
                   <ol style="list-style-type: decimal-leading-1">
                     <li><dl><dt class="eventName">.load()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.unload()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.ready()</dt><dd>クリックした時に</dd></dl></li>
                   </ol>
                 </li>
-                <li><h2>イベントハンドラアタッチメント（11種類）</h2>
+                <li><h2><mark>イベントハンドラアタッチメント（11種類）<mark/></h2>
                   <ol style="list-style-type: decimal-leading-1">
                     <li><dl><dt class="eventName">.bind()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.unbind()</dt><dd>クリックした時に</dd></dl></li>
@@ -108,7 +111,7 @@
                     <li><dl><dt class="eventName">.trigger()</dt><dd>クリックした時に</dd></dl></li>
                   </ol>
                 </li>
-                <li><h2>イベントオブジェクト（19種類）</h2>
+                <li><h2><mark>イベントオブジェクト（19種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
                     <li><dl><dt class="eventName">.jQuery.Event()</dt><dd>クリックした時に</dd></dl></li>
                     <li><dl><dt class="eventName">.eo.type()</dt><dd>クリックした時に</dd></dl></li>
