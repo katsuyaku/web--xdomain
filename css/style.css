@@ -113,6 +113,12 @@ h3{
       position: relative;
       left: -8px;
 }
+nav#main-nav ul.menu:first-child{
+  border-top: 3px solid black;
+}
+nav#main-nav ul.menu:last-child{
+  border-bottom:4px solid black;
+}
 nav#main-nav ul.menu li a{
   transition: all 0.4s ease-in-out 0.6;
 }
@@ -121,9 +127,15 @@ nav#main-nav ul.menu li a:hover{
   font-size: 17px;
   color: white;
 }
+li.eventList dl dd p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #2222;
+}
 
 
-@media screen and (min-width:575px){
+
+@media screen and (min-width:641px){
       #main-nav{
             font-size: 16px;
       }
@@ -143,7 +155,7 @@ nav#main-nav ul.menu li a:hover{
       #main-nav{
             background-color: #4d4b49;
             width: 100%;
-            min-width: 575px;
+            min-width: 641px;
       }
       #main-nav ul{
             height: 50px;
@@ -160,7 +172,7 @@ nav#main-nav ul.menu li a:hover{
       }
       .container{
 
-            min-width: 575px;
+            min-width: 641px;
       }
       #content{
             margin: 0 auto;
@@ -193,7 +205,7 @@ nav#main-nav ul.menu li a:hover{
 }
 
 
-@media screen and (max-width: 574px){
+@media screen and (max-width: 640px){
       #main-nav{
             font-size: 16px;
       }
@@ -214,7 +226,7 @@ nav#main-nav ul.menu li a:hover{
       #main-nav{
             background-color: #4d4b49;
             width: 100%;
-            min-width: 575px;
+            min-width: 641px;
       }
       #main-nav ul{
             height: 50px;
@@ -229,7 +241,7 @@ nav#main-nav ul.menu li a:hover{
             top: 5px;
       }
       .container{
-            min-width: 575px;
+            min-width: 641px;
       }
       #content{
             margin: 0 auto;
@@ -254,12 +266,12 @@ nav#main-nav ul.menu li a:hover{
 
       #footer{
             margin-top: 20px;
-            min-width: 575px;
+            min-width: 641px;
             height: 100px;
             float: left;
             background-color: #4d4b49;
       }
       .copylight{
-            min-width: 575px;
+            min-width: 641px;
       }
 }

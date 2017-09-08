@@ -66,49 +66,73 @@
                 </li>
                 <li><h2><mark>キーイベント（5種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
-                    <li><dl><dt class="eventName">.keydown()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.keypress()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.keyup()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.focusin()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.focusout()</dt><dd>クリックした時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.keydown()</dt><dd>キーを押した時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.keypress()</dt><dd>キー入力があった時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.keyup()</dt><dd>キーを離した時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.focusin()</dt><dd>フォーカスされた時に（子孫要素を含む）<br />
+                    ※子孫要素を含むので、フォーム以外の場合がある
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.focusout()</dt><dd>フォーカスが外れた時に（子孫要素を含む）<br />
+                    ※子孫要素を含むので、フォーム以外の場合がある
+                    </dd></dl></li>
                   </ol>
                 </li>
                 <li><h2><mark>フォームイベント（5種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
-                    <li><dl><dt class="eventName">.focus()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.blur()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.change()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.select()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.submit()</dt><dd>クリックした時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.focus()</dt><dd>フォーカスされた時に（子孫要素を含まない）</dd></dl></li>
+                    <li><dl><dt class="eventName">.blur()</dt><dd>フォーカスが外れた時に（子孫要素を含まない）</dd></dl></li>
+                    <li><dl><dt class="eventName">.change()</dt><dd>内容が変更された時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.select()</dt><dd>テキストタイプの文字が選択された時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.submit()</dt><dd>データ送信時に</dd></dl></li>
                   </ol>
                 </li>
                 <li><h2><mark>ブラウザイベント（3種類）</mark></h2>
                   <ol style="list-style-type: decimal-leading-1">
-                    <li><dl><dt class="eventName">.resize()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.scroll()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.error()</dt><dd>クリックした時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.resize()</dt><dd>リサイズした時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.scroll()</dt><dd>スクロールした時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.error()</dt><dd>エラーが発生した時に</dd></dl></li>
                   </ol>
                 </li>
                 <li><h2><mark>ロードイベント（3種類）<mark/></h2>
                   <ol style="list-style-type: decimal-leading-1">
-                    <li><dl><dt class="eventName">.load()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.unload()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.ready()</dt><dd>クリックした時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.load()</dt><dd>読み込みが完了した時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.unload()</dt><dd>ページから離れる時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.ready()</dt><dd>DOMの読み込みを完了した時に<br />
+                    ※画像の読み込みなどには関与しない
+                  </dd></dl></li>
                   </ol>
                 </li>
-                <li><h2><mark>イベントハンドラアタッチメント（11種類）<mark/></h2>
+                <li><h2><mark>イベントハンドラアタッチメント（9種類）<mark/></h2>
                   <ol style="list-style-type: decimal-leading-1">
-                    <li><dl><dt class="eventName">.bind()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.unbind()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.live()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.die()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.delegate()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.undelegate()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.on()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.off()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.one()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.triggerHandler()</dt><dd>クリックした時に</dd></dl></li>
-                    <li><dl><dt class="eventName">.trigger()</dt><dd>クリックした時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.bind()</dt><dd>イベント発生時に<br />
+                    ※マウスイベント、キーイベント、フォームイベント、ブラウザイベント、ロードイベントに対しては使える<br />
+                    ※現在ではonメソッドを利用
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.unbind()</dt>
+                    <dd>イベント発生時の処理の解除時に<br />
+                    ※bindメソッドによって設定されたイベント発生時<br />
+                    ※現在ではoffメソッドを利用
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.delegate()</dt>
+                    <dd>イベント発生時に<br />
+                    ※bindとは違い動的に追加された要素に対してイベントにも有効<br />
+                    ※現在ではonメソッドを利用
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.undelegate()</dt><dd>イベントの解除時に<br />
+                    ※legateメソッドによって設定されたイベント発生時<br />
+                    ※現在ではoffメソッドを利用
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.on()</dt><dd>イベント発生時に<br />
+                    ※マウスイベント、キーイベント、フォームイベント、ブラウザイベント、ロードイベントに対しては使える<br />
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.off()</dt><dd>イベント解除時に</dd></dl></li>
+                    <li><dl><dt class="eventName">.one()</dt><dd>1回だけ利用できるイベント発生時に<br />
+                    ※マウスイベント、キーイベント、フォームイベント、ブラウザイベント、ロードイベントに対しては使える
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.triggerHandler()</dt><dd>イベントの発生時に<br />
+                    ※ブラウザ標準の処理はしない
+                    </dd></dl></li>
+                    <li><dl><dt class="eventName">.trigger()</dt><dd>イベント処理を実行時に</dd></dl></li>
                   </ol>
                 </li>
                 <li><h2><mark>イベントオブジェクト（19種類）</mark></h2>

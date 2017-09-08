@@ -7,6 +7,10 @@ $(function(){
     },2000)
   }),
 
+  $(".windowSize").dblclick(function(){
+    $(this).fadeOut(800)
+  }),
+
 
   /*この部分はCSSでも可能なようなので、排除
   *$('#main-nav ul.menu li a').hover(function(){
